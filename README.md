@@ -5,8 +5,6 @@
 
  ![Project Image](./client/src/images/screenshot.png)
   
-To view the live page:  [Click Here]()
-
 
 
   ## Table of Contents
@@ -25,7 +23,8 @@ To view the live page:  [Click Here]()
 
 On load, the website will show the main landing page.  From here you can search for books using the search bar.  Click sign up to create an account, or login to log back into your created account.  This will allow you to click `Save Book` on any books you like.  You can then view your saved books by clicking `See Your Books`, and also delete books from your list using the `Delete This Book` button.
  
-  
+To view the live page:  [Click Here](https://blooming-brushlands-06691.herokuapp.com/)
+
   ## Testing
 
   No testing presently.

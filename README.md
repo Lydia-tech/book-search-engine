@@ -1,7 +1,7 @@
 # Book Search Engine 
   ## Description
 
- This a MERN stack project that allows you to search for books using Google's book API.  Once you create an account, you can save books to your list and then delete them when you are finished.
+ This MERN stack project allows you to search for books using Google's book API.  Once you create an account, you can save books to your list and then delete them if you wish.
 
  ![Project Image](./client/src/images/screenshot.png)
   
@@ -13,7 +13,6 @@ To view the live page:  [Click Here]()
   
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
   * [Testing](#testing)
   * [License](#license)
   * [Questions](#questions)
@@ -25,15 +24,11 @@ To view the live page:  [Click Here]()
   ## Usage 
 
 On load, the website will show the main landing page.  From here you can search for books using the search bar.  Click sign up to create an account, or login to log back into your created account.  This will allow you to click `Save Book` on any books you like.  You can then view your saved books by clicking `See Your Books`, and also delete books from your list using the `Delete This Book` button.
-
-  
-  ## Contributing
-
- Please reach out via email if you wish to contribute (see questions section below)
+ 
   
   ## Testing
 
-  No testing currently.
+  No testing presently.
   
   ## License
 

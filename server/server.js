@@ -1,7 +1,7 @@
 const express = require('express');
 // import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
-
+const { connect } = require('mongoose');
 const path = require('path');
 
 // import middleware from auth.js
@@ -10,7 +10,7 @@ const { authMiddleware } = require('./utils/auth');
 // import our typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
-
+require('dotenv').config();
 const PORT = process.env.PORT || 3001;
 const app = express();
 // create a new Apollo server and pass in our schema data

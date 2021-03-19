@@ -1,10 +1,12 @@
+'use-strict';
+require('dotenv').config();
 const mongoose = require('mongoose');
-
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/book-search-engine', {
+// 'mongodb://localhost/book-search-engine'
+mongoose.connect(`${process.env.MONGODB_URI}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: true,
 });
 
-module.exports = mongoose.connect;
+module.exports = mongoose.connection;

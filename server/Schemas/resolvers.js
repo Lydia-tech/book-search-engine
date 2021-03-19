@@ -11,7 +11,7 @@ const resolvers = {
             .select('-__v -password')
             .populate('Book');
         },
-        // get a single user
+        // get a just a single user
         user: async (parent, { username }) => {
             return User.findOne({ username })
             .select('-__v -password')

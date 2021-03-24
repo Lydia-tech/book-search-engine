@@ -10,8 +10,8 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch --ignore '../client/*'\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i && npm run-script build",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && npm audit fix && cd ../client && npm i && npm audit fix --force",
     "heroku-postbuild": "cd client && npm run build"
   },
   "repository": {

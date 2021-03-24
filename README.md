@@ -5,7 +5,7 @@
 
  This MERN stack project allows you to search for books using Google's book API.  Once you create an account, you can save books to your list and then delete them if you wish.
 
- ![Project Image](./client/src/images/screenshot.png)
+ ![Project Image](./client/public/images/screenshot.png)
   
 
 
@@ -39,3 +39,13 @@ To view the live page:  [Click Here](https://blooming-brushlands-06691.herokuapp
   
   * GitHub: [@Lydia-tech](https://github.com/Lydia-tech)
   * Email: lkennedy@gmail.com
+
+## Technical
+### To kill a Port on Mac
+```git
+lsof -i <port_number>
+```
+- find the PID for the `listening` process
+```git
+kill -9 <PID>
+```

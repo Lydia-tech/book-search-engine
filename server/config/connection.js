@@ -1,11 +1,11 @@
-// process.env.NODE_ENV ==='development' ? require('dotenv').config() : '';
+ require('dotenv').config();
 const mongoose = require('mongoose');
 // 'mongodb://localhost/book-search-engine'
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 module.exports = mongoose.connection;

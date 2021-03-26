@@ -15,11 +15,10 @@ export const client = new ApolloClient({
 			}
 		});
 	},
-
-	uri: 'http://localhost:3001/graphql'
+	uri: '/api'
 });
 
-function App() {
+export default function App() {
 	return (
 		<Router>
 			<>
@@ -34,4 +33,3 @@ function App() {
 	);
 }
 
-export default App;

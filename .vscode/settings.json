@@ -1,17 +1,17 @@
-{
-    "[json]": {
+// {
+//     "[json]": {
 
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "gitlens.codeLens.scopes": [
-            "document"
-        ]
-    },
-    "settings": {
-        "files.exclude": {
-            "/Users/lydiakennedy/Library/Caches/typescript/4.2/node_modules/": true
-        }
-    }
-}
+//         "editor.quickSuggestions": {
+//             "strings": true
+//         },
+//         "editor.suggest.insertMode": "replace",
+//         "gitlens.codeLens.scopes": [
+//             "document"
+//         ]
+//     },
+//     "settings": {
+//         "files.exclude": {
+//             "/Users/lydiakennedy/Library/Caches/typescript/4.2/node_modules/": true
+//         }
+//     }
+// }

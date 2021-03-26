@@ -15,7 +15,7 @@ import { GET_ME } from '../utils/queries';
 import { REMOVE_BOOK } from '../utils/mutations';
 
 const SavedBooks = () => {
-	const { loading, data } = useQuery(GET_ME);
+	const { loading, data, error } = useQuery(GET_ME);
 	const [deleteBook] = useMutation(REMOVE_BOOK);
 
 	const userData = data?.me || {};
@@ -42,12 +42,10 @@ const SavedBooks = () => {
 		}
 	};
 
-	if (loading) {
-		return <h2>LOADING...</h2>;
-	}
-
 	return (
 		<>
+    {error ? <div>{error}</div> : loading && !error ? <h2>loading...</h2> : (
+      <>
 			<Jumbotron fluid className='text-light bg-dark'>
 				<Container>
 					<h1>Viewing saved books!</h1>
@@ -88,6 +86,8 @@ const SavedBooks = () => {
 					})}
 				</CardColumns>
 			</Container>
+      </>
+    )}
 		</>
 	);
 };
